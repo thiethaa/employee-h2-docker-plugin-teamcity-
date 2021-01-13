@@ -67,7 +67,7 @@
                     <!-- ***********************************************************************************************************-->
                     <repository>thiethaa/${project.artifactId}</repository>
                     <!--change docker image tag -->
-                    <tag>13</tag>
+                    <tag>14</tag>
                     <!--*************************-->
                     <buildArgs>
                         <JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>
