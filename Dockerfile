@@ -1,4 +1,5 @@
 FROM openjdk:latest
-ADD target/employee-h2-docker-plugin.jar employee-h2-docker-plugin.jar
-EXPOSE 8080
+ARG JAR_FILE
+ADD ${JAR_FILE} employee-h2-docker-plugin.jar
+EXPOSE 9012
 ENTRYPOINT ["java","-jar","employee-h2-docker-plugin.jar"]
